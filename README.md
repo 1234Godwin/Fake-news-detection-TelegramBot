@@ -15,24 +15,6 @@ It uses a fine-tuned transformer model to classify whether a news article is Tru
 
 ☁️ Deployable on Railway or any cloud platform
 
-## 📂 Project Structure
-Fake-news-detection-TelegramBot/
-│── API_folder/             # FastAPI app & model serving
-│   ├── main.py             # FastAPI entrypoint
-│   ├── model.py            # Model loading & prediction logic
-│   ├── telegram_bot.py     # Telegram bot handlers & endpoints
-│   └── requirements.txt    # Dependencies
-│
-│── notebooks/              # Jupyter notebooks for EDA & training
-│   ├── eda.ipynb
-│   ├── preprocessing_finetuning_and_training.ipynb
-│   └── train.csv / test.csv
-│
-│── data/                   # Raw & cleaned datasets (ignored in GitHub)
-│
-│── .gitignore              # Files/folders excluded from GitHub
-│── Procfile                # Railway deployment config
-│── README.md               # Project documentation
 
 ## ⚙️ Installation
 
