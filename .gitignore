@@ -1,0 +1,14 @@
+# Ignore trained model + tokenizer
+API_folder/models/
+API_folder/tokenizer/
+
+# Ignore raw + cleaned data
+API_folder/data/
+
+# Ignore virtual environment
+API_folder/venv/
+
+# Ignore Python cache and system files
+__pycache__/
+*.pyc
+.DS_Store
