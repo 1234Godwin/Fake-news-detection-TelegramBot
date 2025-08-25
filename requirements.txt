@@ -11,7 +11,6 @@ datasets
 torch
 transformers
 fastapi[standard]
-'''ipykernel'''
 streamlit
 python-telegram-bot
 aiohttp
