@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pt
+*.bin
+*.csv
+*.json
+.env
+venv/
+.git/
