@@ -15,6 +15,28 @@ It uses a fine-tuned transformer model to classify whether a news article is Tru
 
 ☁️ Deployable on Railway or any cloud platform
 
+## 🏁 Milestones Achieved
+
+Data acquisition pipeline: Built Scrapy + Playwright spiders to scrape Dubawa and other fact-check sites; normalized labels to True and Fake/Misleading. 
+
+EDA & preprocessing: Added notebooks for cleaning, exploration, and feature preparation to ensure consistent inputs for training. 
+
+Model fine-tuning: Trained a transformer-based classifier on Nigerian fact-check data; integrated it behind a FastAPI prediction endpoint. 
+
+Bot integration: Wired the Telegram bot to the API for real-time verification flows. 
+
+Containerization & deployability: Included Dockerfile and Procfile with instructions for Railway deployment. 
+
+## 🌍 Importance
+
+Combats misinformation at scale: Automated triage (“True” vs “False”) helps journalists, researchers, and the public prioritize which claims need deeper review. 
+
+Bridges research and practice: Moves transformer-based NLP from notebooks into a production chat interface, demonstrating a practical pathway from model to user impact. 
+
+Open, extensible pipeline: Because data collection, EDA, training, and serving are all in one repo, others can extend sources (more Nigerian fact-checkers), swap models, or add languages (Hausa/Igbo/Yoruba). 
+
+Keeps pace with dynamic websites: Using scrapy-playwright means you can ingest content from sites that rely on JavaScript rendering—critical for modern media pages. 
+
 
 ## ⚙️ Installation
 
@@ -24,48 +46,13 @@ git clone https://github.com/1234Godwin/Fake-news-detection-TelegramBot.git
 cd Fake-news-detection-TelegramBot
 
 
-Create a virtual environment and install dependencies:
-
-python -m venv venv
-source venv/bin/activate   # Linux/Mac
-venv\Scripts\activate      # Windows
-
-pip install -r requirements.txt
-
-🤖 Run Locally
-1️⃣ Start FastAPI app
-uvicorn API_folder.main:app --reload
-
-
-API will run at: http://127.0.0.1:8000
-
-2️⃣ Start Telegram Bot
-
-Update your Telegram Bot Token in .env or as an environment variable, then run:
-
-python API_folder/telegram_bot.py
-
-## ☁️ Deployment (Railway)
-
-Push project to GitHub
-
-Create a new Railway project → Deploy from GitHub Repo
-
-Set required environment variables (e.g., TELEGRAM_TOKEN, MODEL_PATH)
-
-Railway automatically installs dependencies from requirements.txt and runs Procfile
-
 ## 📊 Dataset
 
 Dubawa Fact-Check articles
 
 AfricaCheck verified claims
 
-Labels normalized into:
-
-True
-
-Fake/Misleading
+Labels normalized into: True and False
 
 ## 🔮 Future Improvements
 
